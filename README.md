@@ -42,11 +42,11 @@ In this project, I focused on:
 * **API and Data Handling**: Adapting to changes in the backend API, dealing with CORS issues, managing data fetching and handling.
 * **Data Management**: Filtering data based on user input, ensuring correct data display, planning to integrate TanStack.
 * **Data Scaling and Visualization**: Scaling ESG indicators, ensuring visibility and clarity, optimizing performance, and ensuring responsiveness.
-* **UI and UX Enhancements**: Implementing UI components and charts using new tools like Recharts and Ant Design, and improving UI snappiness.
+* **UI and UX Enhancements**: Implementing UI components and charts using unfamilliar tools like Recharts and Ant Design. 
 
 ## Future Work
-* **Integrating TanStack for State Management**: To improve state management across the application.
-* **Improving UI Snappiness**: Enhancing the responsiveness and interactivity of the user interface.
+* **Integrating TanStack Query for State Management**: To improve state management across the application.
+* **Improving UI**: Enhancing the responsiveness, improve styling and interactivity of the user interface.
 * **Improving Code Architecture**: Refactoring the codebase to improve modularity and ease of deployment.
 
 ## How to Use
