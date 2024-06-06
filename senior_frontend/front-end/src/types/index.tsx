@@ -1,12 +1,14 @@
-export interface Indicator {
-    date: string;
-    dimension: string;
-    indicator: string;
-    value: number;
-}
-
 export interface Dimension {
-    id: string;
+    id: number;
     country: string;
     business_unit: string;
+}
+
+export interface Indicator {
+    business_unit: string;
+    country: string;
+    date: string;
+    dimension: number;
+    indicator: string;
+    value: number;
 }
