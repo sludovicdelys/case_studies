@@ -94,11 +94,11 @@ const Chart: React.FC<ChartProps> = ({ data, xDataKey, yDataKeys, colors, timeGr
         <XAxis dataKey="date" tickFormatter={(tickItem) => formatXAxis(tickItem, timeGranularity)} />
         <YAxis yAxisId="left" />
         <YAxis yAxisId="right" orientation="right" />
-        <YAxis yAxisId="gender_parity" orientation="right" scale="linear" domain={[0, 10]} />
+        <YAxis yAxisId="gender_parity" orientation="right" scale="auto" domain={[0, 10]} />
         <Tooltip />
         <Legend />
         {yDataKeys.map((key, index) => {
-          if (["female_headcount", "male_headcount", "gender_parity_ratio"].indexOf(key) !== -1) {
+          if (["female_headcount", "male_headcount"].indexOf(key) !== -1) {
             return <Bar yAxisId="right" type="monotone" dataKey={key} fill={colors[index % colors.length]} key={`${key}-${index}`} barSize={getBarSize()} />  
           }
           if (["gender_parity_ratio"].indexOf(key) !== -1) {
